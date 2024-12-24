@@ -68,6 +68,58 @@
   align-items: center;    /* Center horizontally */
 }
 
+
+.navigation-menu {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.navigation-menu ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.navigation-menu li {
+  display: inline;
+}
+
+.navigation-menu button {
+  background: none;
+  border: none;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.navigation-menu button:hover {
+  text-decoration: underline;
+}
+
+.main-content {
+  margin-top: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align to the left */
+  width: 100%;
+}
+
+.collapsible-content {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  width: 100%;
+  max-width: 600px; /* Adjust width as needed */
+  overflow-y: auto;
+}
+
+
 /* Example media query for smaller screens */
 @media (max-width: 768px) {
   .search-bar {
@@ -231,3 +283,4 @@
   display: block; /* Make it a block element for easier centering */
   text-align: center;
 }
+
