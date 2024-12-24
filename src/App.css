@@ -1,0 +1,179 @@
+.App {
+  display: flex; /* Use flex for more control over top placement*/
+  justify-content: center; /* Horizontal centering */
+  align-items: flex-start; /* Align to top, then adjust with padding */
+  min-height: 100vh;
+  padding-top: 10px; /* Push down by 1px */
+}
+
+.top-right-container { /* Styles *only* the create-user section */
+  position: absolute;  /* Use absolute positioning */
+  top: 5px;
+  right: 50px;
+}
+
+.top-left-container{
+  position: absolute;
+  top: 10px;
+  left: 50px;
+}
+
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #f1f1f1;
+  border-radius: 20px;
+  padding: 10px;
+  width: 50%; 
+  width: 300px;
+}
+
+.search-bar input[type="text"] {
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 16px;
+
+  margin-left: 10px;
+  width: 100%;
+}
+
+.search-bar input[type="text"]::placeholder {
+  color: #494848;
+}
+.create-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  
+}
+.create-user a {
+  text-decoration: none;
+}
+#p1 {
+  color: blue;
+}
+
+.image img {
+  width: 200px; /* Example width */
+  height: auto;  /* Maintain aspect ratio */
+}
+
+.home-page {
+  /* Existing styles... */
+
+  display: flex;          /* Enable flexbox layout */
+  flex-direction: column; /* Align items vertically */
+  align-items: center;    /* Center horizontally */
+}
+
+/* Example media query for smaller screens */
+@media (max-width: 768px) {
+  .search-bar {
+      width: 90%; /* Adjust width on smaller screens */
+  }
+
+  .top-right-container {
+      position: relative; /* Or adjust as needed */
+      top: auto;  /* Reset top positioning */
+      right: auto; /* Reset right positioning */
+      text-align: center; /* Center the content */
+  }
+  
+  .home-page{
+    padding-top: 50px;  /* Add top padding for the content below the image */
+   }
+
+   .search-bar {
+    margin-top: 20px; /* Add spacing to avoid overlap*/
+   }
+}
+
+@media (max-width: 550px){
+.Center_head .Tablet_head img {
+  width: 90vw; /* 80% of viewport width*/
+  height: auto;
+}
+
+.home-page .search-bar{
+  display: flex;
+  justify-content: center;
+}
+.Center_head .Tablet_head{
+  display: flex;
+  justify-content: center;
+}
+
+.top-left-container img { /* Or .top-left-container .image img*/
+  width: 90%; /* Slightly less than the container width*/
+  height: auto;
+}
+
+.top-left-container {
+  width: 21vw; 
+}
+
+}
+
+.create-account-form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.create-account-form div {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.create-account-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.create-account-form input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.create-account-form .password-toggle {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.create-account-form .password-toggle input {
+  flex: 1;
+}
+
+.create-account-form .password-toggle i {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  color: #888;
+}
+
+.create-account-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.create-account-form button:hover {
+  background-color: #45a049;
+}
