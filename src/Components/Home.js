@@ -33,7 +33,7 @@ function Home({formData}){
         </div>
         {formData ? (
                     <div className="top-right-container">
-                        <p>Welcome {formData.email}</p> </div>
+                        <p>Welcome {formData.firstName}</p> </div>
                 ) : (
                     <div className="top-right-container">
                         <div className='create-user'>
