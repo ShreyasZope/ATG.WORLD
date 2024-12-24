@@ -16,7 +16,7 @@ function Home(){
         <React.Fragment>
         <Helmet>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        <title>My Title</title>
+        <title>ATG WORLD</title>
         </Helmet>
         <div className='home-page'>
         <div className='search-bar'>
