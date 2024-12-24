@@ -6,7 +6,7 @@ import Home from './Components/Home.js';
 import './App.css';
 
 function App() {
-  const [formData, setFormData] = useState(null);  // Store the form data
+  const [formData, setFormData] = useState(null);
 
     const handleFormSubmit = (data) => {
         setFormData(data);

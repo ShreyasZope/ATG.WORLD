@@ -9,7 +9,7 @@ function Signin({ formData }){
     const navigate = useNavigate();
 
     const handleChange = (event) => {
-        const { name, value } = event.target; // Get both name and value
+        const { name, value } = event.target;
     
         if (name === "email") {
             setEmail(value);

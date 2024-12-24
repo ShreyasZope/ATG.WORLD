@@ -1,23 +1,22 @@
 .App {
-  display: flex; /* Use flex for more control over top placement*/
-  justify-content: center; /* Horizontal centering */
-  align-items: flex-start; /* Align to top, then adjust with padding */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
   min-height: 100vh;
-  padding-top: 10px; /* Push down by 1px */
+  padding-top: 10px;
 }
 
-.top-right-container { /* Styles *only* the create-user section */
-  position: absolute;  /* Use absolute positioning */
+.top-right-container {
+  position: absolute;
   top: 5px;
   right: 50px;
 }
 
-.top-left-container{
+.top-left-container {
   position: absolute;
   top: 10px;
   left: 50px;
 }
-
 
 .search-bar {
   display: flex;
@@ -25,7 +24,7 @@
   background-color: #f1f1f1;
   border-radius: 20px;
   padding: 10px;
-  width: 50%; 
+  width: 50%;
   width: 300px;
 }
 
@@ -34,7 +33,6 @@
   background: none;
   outline: none;
   font-size: 16px;
-
   margin-left: 10px;
   width: 100%;
 }
@@ -42,32 +40,31 @@
 .search-bar input[type="text"]::placeholder {
   color: #494848;
 }
+
 .create-user {
   display: flex;
   align-items: center;
   gap: 10px;
-  
 }
+
 .create-user a {
   text-decoration: none;
 }
+
 #p1 {
   color: blue;
 }
 
 .image img {
-  width: 200px; /* Example width */
-  height: auto;  /* Maintain aspect ratio */
+  width: 200px;
+  height: auto;
 }
 
 .home-page {
-  /* Existing styles... */
-
-  display: flex;          /* Enable flexbox layout */
-  flex-direction: column; /* Align items vertically */
-  align-items: center;    /* Center horizontally */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
 
 .navigation-menu {
   display: flex;
@@ -104,7 +101,7 @@
   padding: 10px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Align to the left */
+  align-items: flex-start;
   width: 100%;
 }
 
@@ -115,57 +112,55 @@
   border-radius: 5px;
   background-color: #f9f9f9;
   width: 100%;
-  max-width: 600px; /* Adjust width as needed */
+  max-width: 600px;
   overflow-y: auto;
 }
 
-
-/* Example media query for smaller screens */
 @media (max-width: 768px) {
   .search-bar {
-      width: 90%; /* Adjust width on smaller screens */
+    width: 90%;
   }
 
   .top-right-container {
-      position: relative; /* Or adjust as needed */
-      top: auto;  /* Reset top positioning */
-      right: auto; /* Reset right positioning */
-      text-align: center; /* Center the content */
+    position: relative;
+    top: auto;
+    right: auto;
+    text-align: center;
   }
-  
-  .home-page{
-    padding-top: 50px;  /* Add top padding for the content below the image */
-   }
 
-   .search-bar {
-    margin-top: 20px; /* Add spacing to avoid overlap*/
-   }
+  .home-page {
+    padding-top: 50px;
+  }
+
+  .search-bar {
+    margin-top: 20px;
+  }
 }
 
-@media (max-width: 550px){
-.Center_head .Tablet_head img {
-  width: 90vw; /* 80% of viewport width*/
-  height: auto;
-}
+@media (max-width: 550px) {
+  .Center_head .Tablet_head img {
+    width: 90vw;
+    height: auto;
+  }
 
-.home-page .search-bar{
-  display: flex;
-  justify-content: center;
-}
-.Center_head .Tablet_head{
-  display: flex;
-  justify-content: center;
-}
+  .home-page .search-bar {
+    display: flex;
+    justify-content: center;
+  }
 
-.top-left-container img { /* Or .top-left-container .image img*/
-  width: 90%; /* Slightly less than the container width*/
-  height: auto;
-}
+  .Center_head .Tablet_head {
+    display: flex;
+    justify-content: center;
+  }
 
-.top-left-container {
-  width: 21vw; 
-}
+  .top-left-container img {
+    width: 90%;
+    height: auto;
+  }
 
+  .top-left-container {
+    width: 21vw;
+  }
 }
 
 .create-account-form {
@@ -230,12 +225,11 @@
   background-color: #45a049;
 }
 
-
 .Signupage-form {
   display: flex;
   flex-direction: column;
   width: 400px;
-  margin: auto; /* Center the form horizontally */
+  margin: auto;
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
@@ -265,7 +259,7 @@
   padding: 10px;
   border: none;
   border-radius: 5px;
-  background-color: #4caf50; /* Example - Customize as needed */
+  background-color: #4caf50;
   color: white;
   font-size: 16px;
   cursor: pointer;
@@ -273,14 +267,13 @@
 }
 
 .Signupage-form button:hover {
-  background-color: #45a049; /* Example - Customize as needed */
+  background-color: #45a049;
 }
 
-.Signupage-form a {  /* Style the link */
-  color: #007bff; /* Example link color */
+.Signupage-form a {
+  color: #007bff;
   text-decoration: none;
   margin-top: 10px;
-  display: block; /* Make it a block element for easier centering */
+  display: block;
   text-align: center;
 }
-
