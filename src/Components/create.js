@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+let Mail =null;
+let Pass =null;
 
-function Create() {
+
+function Create({ onFormSubmit }) {
     const [formValues, setFormValues] = useState({
         firstName: '',
         lastName: '',
@@ -16,12 +19,16 @@ function Create() {
             ...formValues,
             [name]: value
         });
+        
     };
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        // Add form submission logic here
+        onFormSubmit(formValues);
         console.log('Form submitted', formValues);
+        Mail=formValues.email;
+        Pass=formValues.password;
+
     };
 
     return (
@@ -86,3 +93,5 @@ function Create() {
 }
 
 export default Create;
+
+

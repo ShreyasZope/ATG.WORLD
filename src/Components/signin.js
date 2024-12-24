@@ -1,11 +1,20 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import {User} from './create.js';
 
-function Signin(){
+function Signin({ formData }){
     return(
-        <div> 
-            
-            </div>
+<div>
+            {formData ? ( // Check if formData exists
+                <>
+                    <p>Email: {formData.email}</p>
+                    <p>Password: {formData.password}</p>
+                </>
+            ) : (
+                <p>No form data submitted yet.</p>
+            )}
+        </div>
+
     )
 }
 
