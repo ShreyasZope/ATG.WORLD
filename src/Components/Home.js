@@ -74,7 +74,7 @@ function Home({ formData }) {
                         <img src={Post2} alt="Post2" />
                         <img src={Post3} alt="Post3" />
                         <img src={Post4} alt="Post4" />
-                        </div>}
+                    </div>}
                     {activeSection === 'article' && <div className="collapsible-content">Content for Article</div>}
                     {activeSection === 'event' && <div className="collapsible-content">Content for Event</div>}
                     {activeSection === 'education' && <div className="collapsible-content">Content for Education</div>}

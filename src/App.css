@@ -24,7 +24,6 @@
   background-color: #f1f1f1;
   border-radius: 20px;
   padding: 10px;
-  width: 50%;
   width: 300px;
 }
 
@@ -100,7 +99,7 @@
   margin-top: 20px;
   padding: 10px;
   display: flex;
-  flex-direction: column;
+  justify-content: flex-start; /* Align to the left */
   align-items: flex-start;
   width: 100%;
 }
@@ -112,8 +111,7 @@
   border-radius: 5px;
   background-color: #f9f9f9;
   width: 100%;
-  max-width: 600px;
-  overflow-y: auto;
+  max-width: 600px; /* Adjust width as needed */
 }
 
 @media (max-width: 768px) {
