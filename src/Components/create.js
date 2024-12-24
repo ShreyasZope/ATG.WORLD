@@ -32,7 +32,9 @@ function Create({ onFormSubmit }) {
     };
 
     return (
+        
         <form onSubmit={handleSubmit} className="create-account-form">
+            <h1>Create Account</h1>
             <div>
                 <label>First Name</label>
                 <input

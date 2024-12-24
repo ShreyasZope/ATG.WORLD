@@ -16,7 +16,7 @@ function App() {
     <BrowserRouter>
     <div className='App'>
      <Routes>
-      <Route path='/' element={<Home />} />
+      <Route path='/' element={<Home formData={formData} />} />
       <Route path='signup' element={<Create onFormSubmit={handleFormSubmit} />} />
       <Route path='signin' element={<Signin Signin formData={formData} />} />
      </Routes>

@@ -177,3 +177,57 @@
 .create-account-form button:hover {
   background-color: #45a049;
 }
+
+
+.Signupage-form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: auto; /* Center the form horizontally */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.Signupage-form div {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Signupage-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.Signupage-form input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.Signupage-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50; /* Example - Customize as needed */
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.Signupage-form button:hover {
+  background-color: #45a049; /* Example - Customize as needed */
+}
+
+.Signupage-form a {  /* Style the link */
+  color: #007bff; /* Example link color */
+  text-decoration: none;
+  margin-top: 10px;
+  display: block; /* Make it a block element for easier centering */
+  text-align: center;
+}

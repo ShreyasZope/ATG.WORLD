@@ -5,12 +5,16 @@ import logo from '../sorces/logo.png';
 import { Helmet } from "react-helmet";
 import Center_head from '../sorces/Center_head.png';
 
-function Home(){
+function Home({formData}){
     const [searchTerm, setSearchTerm] = useState('');
 
     const handleSearchChange = (event) => {
         setSearchTerm(event.target.value);
     };
+    if(formData){
+        console.log("Form Data in Home.js:", formData);
+        
+    }
 
     return(
         <React.Fragment>
@@ -27,15 +31,19 @@ function Home(){
                 onChange={handleSearchChange}
             />
         </div>
-        <div className="top-right-container">
-        <div className='create-user'>
-            <p>Create Account</p>
-            <Link to="/signup">
-            <p className='p1'>It's Free</p>
-            
-            </Link>
-        </div>
-        </div>
+        {formData ? (
+                    <div className="top-right-container">
+                        <p>Welcome {formData.email}</p> </div>
+                ) : (
+                    <div className="top-right-container">
+                        <div className='create-user'>
+                            <p>Create Account</p>
+                            <Link to="/signup">
+                                <p className='p1'>It's Free</p>
+                            </Link>
+                        </div>
+                    </div>
+                )}
         <div className='top-left-container'>
             <div className='image'>
             <img src={logo} alt="Logo" />
